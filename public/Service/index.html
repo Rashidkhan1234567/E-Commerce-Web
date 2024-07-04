@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../src/output.css">
+    <link rel="stylesheet" href="validation.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+        <button type="button" id="skip">Continue as Guest</button>
+    </header>
+    <section>
+        <div class="login-box" id="login-box">
+            <form>
+              <div class="user-box">
+                <input type="text" id="oname" name="text" required />
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="email" id="oemail" name="text" required />
+                <label>Email</label>
+              </div>
+              <div class="user-box">
+                <input type="password" id="opass" name="text" required />
+                <label>Password</label>
+              </div>
+              <center>
+                  <!-- </center> -->
+                  <button type="button" id="login">Login
+                      <span></span>
+                    </button><br><br>
+                    <a href="#" id="caa">Create an Account</a>
+                </center>
+            </form>
+          </div>
+          
+        <div class="signup-box" id="signup-box">
+            <form>
+              <div class="user-box">
+                <input type="text" id="cname" name="text" required />
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="email" id="cemail" name="text" required />
+                <label>Email</label>
+              </div>
+              <div class="user-box">
+                <input type="password" id="cpass" name="text" required />
+                <label>Password</label>
+              </div>
+              <center>
+                  <!-- </center> -->
+                  <button type="button" id="signup">Sign Up
+                      <span></span>
+                    </button><br><br>
+                    <a href="#" id="aha">already have a account</a>
+                </center>
+            </form>
+          </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="validation.js"></script>
+  </body>
+</html>

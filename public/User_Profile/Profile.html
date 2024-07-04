@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../src/output.css">
+    <link rel="stylesheet" href="Profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-gray-950 justify-between pt-5 pb-5 ps-lg-10 pe-10">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl " href="../Main.html" id="btn2">daisyUI</a>
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end pe-6">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="sm_icon badge badge-sm indicator-item">0</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+              <div class="card-body">
+                <span class="lg_icon  text-lg font-bold">0 Items</span>
+                <div class="card-actions">
+                  <button class="View_cart btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full" id="changes">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li aria-disabled="true"><a aria-disabled="true">Settings <span class="badge badge-secondary">Soon</span></a></li>
+              <li id="logout"><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+<section>
+  <div class="profile flex h-full w-full items-center">
+    <div class="img" id="change">
+      <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" class="rounded-full" alt="User Profile" height="400" width="500">
+    </div>
+    <div class="details flex flex-col justify-center">
+      <div class="name">
+        <h2 class="card-title text-blue-500" >Name :</h2>
+        <span class="text font-bold text-2xl" id="name">Bot</span><br><br><hr>
+      </div>
+      <div class="email">
+        <h2 class="text-blue-500 card-title">Email :</h2>
+        <span class="text font-bold text-2xl " id="email">Bot123@gmail.com</span><br><br><hr>
+      </div>
+      <div class="password">
+        <h2 class="card-title text-blue-500" >Password :</h2>
+        <input type="password" disabled value="Bot" class="text font-bold text-2xl"  id="password">
+        <button type="button" id="show_password">Show</button><hr class="hr">
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="Profile.js"></script>
+  </body>
+</html>
