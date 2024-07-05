@@ -24,7 +24,7 @@ let color = [
 ]
 
 if(localStorage.getItem("name") == null ){
-  location.replace("Service/index.html")
+  location.replace("../index.html")
 }else if(localStorage.getItem("name") == "bot"){}
 else{
   let change_color = Math.floor(Math.random()*color.length)
@@ -48,7 +48,7 @@ logout.addEventListener("click",()=>{
   let confirm1 = confirm("Confirm to logout")
   if(confirm1){
     localStorage.removeItem("Name")
-    window.location.replace("Service/index.html")
+    window.location.replace("../index.html")
   }
 })
 
@@ -2014,8 +2014,8 @@ buy.forEach((btn) => {
 
 let View_cart = document.querySelector(".View_cart");
 View_cart.onclick = () => {
+  document.querySelector('link[rel="icon"]').href ="../Images/Logo for view card.jpeg";
   section.style.display = "none";
-
   let boxs = document.getElementById("boxs");
   let selector = document.getElementById("selector");
   boxs.style.height = "100vh";
@@ -2048,6 +2048,7 @@ View_cart.onclick = () => {
 
   let back = document.getElementById("back");
   back.onclick = () => {
+    document.querySelector('link[rel="icon"]').href ="../Images/logo for store.jpeg";
     section.style.display = "flex";
     boxs.style.height = "0";
     selector.style.display = "flex";

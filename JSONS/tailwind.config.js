@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./public./**/*.{html,js}",
-    "./public/User_Profile/*.{html,js}"
+    ".././*.{html,js}",
+    ".././public/User_Profile/*.{html,js}"
   ],
   presets: [
     require('@acmecorp/base-tailwind-config')

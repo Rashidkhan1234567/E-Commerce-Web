@@ -6,7 +6,7 @@ let Name = localStorage.getItem("name")
 let Storages = JSON.parse(localStorage.getItem(Name))
 
 if (localStorage.getItem("name") == null) {
-  location.replace("Service/index.html")
+  location.replace("../../index.html")
 }else if (localStorage.getItem("name") == "bot"){
 
 }else{
@@ -55,7 +55,7 @@ logout.addEventListener("click", () => {
   let confirm1 = confirm("Confirm to logout");
   if (confirm1) {
     localStorage.removeItem("Name");
-    window.location.replace("Service/index.html");
+    window.location.replace("../../index.html");
   }
 });
 

@@ -6,21 +6,23 @@ newAccount.addEventListener("click",()=>{
    signup_box.style.left = "50%"
 let chnge = document.querySelector("title")
 chnge.textContent = "Sign Up"
+document.querySelector('link[rel="icon"]').href ="Images/logo for Sign up Page.jpeg";
 })
 let haveAccount = document.getElementById('aha')
 haveAccount.addEventListener("click",()=>{
-   let login_box =  document.getElementById("login-box")
-   login_box.style.left = "50%"
-   let signup_box  = document.getElementById("signup-box")
-   signup_box.style.left = "150%"
-let change  = document.querySelector("title")
-change.textContent = "Login"
+  let login_box =  document.getElementById("login-box")
+  login_box.style.left = "50%"
+  let signup_box  = document.getElementById("signup-box")
+  signup_box.style.left = "150%"
+  let change  = document.querySelector("title")
+  change.textContent = "Login"
+  document.querySelector('link[rel="icon"]').href ="Images/logo for Login Page.jpeg";
 })
 
 
 let skip = document.getElementById('skip')
 skip.addEventListener("click",()=>{
-    location.replace("../Main.html")
+    location.replace("public/Main.html")
     localStorage.setItem("name","bot")
 })
 
@@ -123,7 +125,7 @@ login_btn.addEventListener("click", () => {
           });
         localStorage.setItem("name",Names)
           setInterval(function () {
-            window.location.replace("../Main.html");
+            window.location.replace("public/Main.html");
           }, 2000);
         } else {
           Swal.fire({
