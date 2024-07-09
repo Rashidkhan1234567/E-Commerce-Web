@@ -1880,7 +1880,7 @@ for (let i of obj.products) {
 }
 
 //   function of  Category
-let uniquebrand = [];
+// let uniquebrand = [];
 category.onchange = () => {
   let selectedCategory = category.value;
   section.innerHTML = ""
